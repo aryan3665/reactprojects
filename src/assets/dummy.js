@@ -4,7 +4,7 @@ const arr = [
     offer: "20-30% off",
     price: 299,
     image:
-      "https://unsplash.com/photos/baked-homemade-potato-pies-creamy-garlic-dip-baked-beetroot-and-roasted-bacon-top-of-view-yT14s9_dCi0",
+      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c",
   },
   {
     dish: "Chicken Biryani",
