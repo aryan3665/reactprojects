@@ -15,6 +15,15 @@ function App() {
     setA([...A]);
   }
 
+  function searchDish(e) {
+  const value = e.target.value.toLowerCase();
+  const searched = arr.filter((item) =>
+    item.dish.toLowerCase().includes(value)
+  );
+  setA(searched);
+}
+
+
   // function filtr() {
   //   const B = arr.filter((value) => value.price > 10);
   //   setA(B);
@@ -26,6 +35,13 @@ function App() {
       {/* <button onClick={filtr}>filter by price</button> */}
       <br></br>
       <button onClick={sortit}>sort by price</button>
+
+      <input
+  type="text"
+  placeholder="Search dish..."
+  onChange={searchDish}
+/>
+
 
       <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
         {A.map((value, index) => (
