@@ -1,49 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Food from "./comp/Food.jsx";
 import Header from "./comp/Header.jsx";
 import Footer from "./comp/Footer.jsx";
 import arr from "./assets/dummy.js";
 
-import { useState } from "react";
-
 function App() {
-  let [A, setA] = useState(arr);
+  const [A, setA] = useState(arr);
 
-    function sortit() {
-    A.sort((a, b) => a.price - b.price);
-    setA([...A]);
+  function sortit() {
+    const sorted = [...A].sort((a, b) => a.price - b.price);
+    setA(sorted);
   }
 
   function searchDish(e) {
-  const value = e.target.value.toLowerCase();
-  const searched = arr.filter((item) =>
-    item.dish.toLowerCase().includes(value)
-  );
-  setA(searched);
-}
+    const value = e.target.value.toLowerCase();
+    const searched = arr.filter((item) =>
+      item.dish.toLowerCase().includes(value)
+    );
+    setA(searched);
+  }
 
-
-  // function filtr() {
-  //   const B = arr.filter((value) => value.price > 10);
-  //   setA(B);
-  // }
   return (
     <div>
-      <Header></Header>
-      <br></br>
-      {/* <button onClick={filtr}>filter by price</button> */}
-      <br></br>
-      <button onClick={sortit}>sort by price</button>
+      <Header />
 
-      <input
-  type="text"
-  placeholder="Search dish..."
-  onChange={searchDish}
-/>
+      {/* Controls Section */}
+      <div style={styles.controls}>
+        <button style={styles.button} onClick={sortit}>
+          Sort by Price
+        </button>
 
+        <input
+          type="text"
+          placeholder="Search dish..."
+          onChange={searchDish}
+          style={styles.input}
+        />
+      </div>
 
-      <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+      {/* Food Cards */}
+      <div style={styles.foodContainer}>
         {A.map((value, index) => (
           <Food
             key={index}
@@ -55,9 +52,47 @@ function App() {
         ))}
       </div>
 
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+/* ---------------- STYLES ---------------- */
+
+const styles = {
+  controls: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "12px",
+    flexWrap: "wrap",
+    margin: "20px",
+  },
+
+  button: {
+    padding: "10px 20px",
+    borderRadius: "6px",
+    border: "none",
+    backgroundColor: "#ff7a00",
+    color: "#fff",
+    fontSize: "16px",
+    cursor: "pointer",
+  },
+
+  input: {
+    padding: "10px",
+    borderRadius: "6px",
+    border: "1px solid #ccc",
+    fontSize: "16px",
+    width: "220px",
+  },
+
+  foodContainer: {
+    display: "flex",
+    gap: "10px",
+    flexWrap: "wrap",
+    justifyContent: "center",
+  },
+};
