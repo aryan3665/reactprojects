@@ -16,8 +16,8 @@ function FoodCard(props) {
     >
       {/* Dish Image */}
       <img
-        src={https://www.tastingtable.com/772393/delicious-indian-dishes-you-have-to-try-at-least-once/}
-        alt={}
+       src={props.image}
+        alt={props.dish}
         height="180px"
         width="100%"
         style={{ objectFit: "cover" }}
