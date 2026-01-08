@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Header */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.images {
+    cursor: pointer;
+}
+
+/* Menu Buttons */
+.options {
+    display: flex;
+    gap: 18px;
+}
+
+.but {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 6px;
+    color: #333;
+}
+
+.but:hover {
+    color: #e63946;
+    border-bottom: 2px solid #e63946;
+}
+
+/* Search Box */
+.search {
+    width: 260px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.search:focus {
+    border-color: #e63946;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    gap: 15px;
+}
+
+.pro {
+    background-color: #e63946;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pro:hover {
+    background-color: #c92c3a;
+}

@@ -1,0 +1,136 @@
+const arr = [
+  {
+    dish: "Paneer Butter Masala",
+    offer: "20-30% off",
+    price: 299,
+    image:
+      "https://unsplash.com/photos/baked-homemade-potato-pies-creamy-garlic-dip-baked-beetroot-and-roasted-bacon-top-of-view-yT14s9_dCi0",
+  },
+  {
+    dish: "Chicken Biryani",
+    offer: "25-40% off",
+    price: 349,
+    image: "https://images.unsplash.com/photo-1600628422019-6c56f6b75b8d",
+  },
+  {
+    dish: "Veg Biryani",
+    offer: "30-45% off",
+    price: 279,
+    image: "https://images.unsplash.com/photo-1600628422020-ec4c8b5ac2ff",
+  },
+  {
+    dish: "Butter Naan",
+    offer: "10-20% off",
+    price: 49,
+    image: "https://images.unsplash.com/photo-1628294897769-7f1c33c4f2d1",
+  },
+  {
+    dish: "Tandoori Roti",
+    offer: "10-15% off",
+    price: 35,
+    image: "https://images.unsplash.com/photo-1604909053197-5d49fcb9c8a8",
+  },
+  {
+    dish: "Chicken Tikka",
+    offer: "20-35% off",
+    price: 399,
+    image: "https://images.unsplash.com/photo-1606756790138-261d2b21cd75",
+  },
+  {
+    dish: "Veg Manchurian",
+    offer: "25-40% off",
+    price: 249,
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+  },
+  {
+    dish: "Fried Rice",
+    offer: "20-30% off",
+    price: 229,
+    image: "https://images.unsplash.com/photo-1600628422010-8a2b96b1f06d",
+  },
+  {
+    dish: "Hakka Noodles",
+    offer: "20-35% off",
+    price: 239,
+    image: "https://images.unsplash.com/photo-1604908177522-4299c2b31b07",
+  },
+  {
+    dish: "Cheese Pizza",
+    offer: "30-50% off",
+    price: 499,
+    image: "https://images.unsplash.com/photo-1548365328-9f547f1e1c56",
+  },
+  {
+    dish: "Margherita Pizza",
+    offer: "25-45% off",
+    price: 449,
+    image: "https://images.unsplash.com/photo-1601924582975-7e670fbc1b0a",
+  },
+  {
+    dish: "Veg Burger",
+    offer: "20-30% off",
+    price: 149,
+    image: "https://images.unsplash.com/photo-1550547660-d9450f859349",
+  },
+  {
+    dish: "Chicken Burger",
+    offer: "25-40% off",
+    price: 199,
+    image: "https://images.unsplash.com/photo-1550547660-7f56c0f0b7b1",
+  },
+  {
+    dish: "French Fries",
+    offer: "15-25% off",
+    price: 129,
+    image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877",
+  },
+  {
+    dish: "Spring Rolls",
+    offer: "20-35% off",
+    price: 179,
+    image: "https://images.unsplash.com/photo-1604908554166-9b5e1cba89e3",
+  },
+  {
+    dish: "Pasta Alfredo",
+    offer: "30-45% off",
+    price: 329,
+    image: "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+  },
+  {
+    dish: "Red Sauce Pasta",
+    offer: "25-40% off",
+    price: 299,
+    image: "https://images.unsplash.com/photo-1521389508051-d7ffb5dc8a40",
+  },
+  {
+    dish: "Ice Cream",
+    offer: "10-20% off",
+    price: 99,
+    image: "https://images.unsplash.com/photo-1505253758473-96b7015fcd8a",
+  },
+  {
+    dish: "Chocolate Brownie",
+    offer: "20-30% off",
+    price: 149,
+    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c",
+  },
+  {
+    dish: "Cold Coffee",
+    offer: "15-25% off",
+    price: 129,
+    image: "https://images.unsplash.com/photo-1590080876779-ec6f5b2e3e44",
+  },
+  {
+    dish: "Fresh Lime Soda",
+    offer: "10-20% off",
+    price: 89,
+    image: "https://images.unsplash.com/photo-1622484212850-eb596a23f4f0",
+  },
+  {
+    dish: "Gulab Jamun",
+    offer: "15-25% off",
+    price: 109,
+    image: "https://images.unsplash.com/photo-1600628422025-4a5e9b8c1d94",
+  },
+];
+export default arr;
